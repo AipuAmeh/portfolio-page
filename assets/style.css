@@ -1,0 +1,31 @@
+html {
+    font-size: 50%;
+}
+
+nav{
+    font-size: ;
+    padding: 20px;
+    font-family: serif, sans-serif, 'Times New Roman';
+    background-color: bisque;
+    color: black;
+}
+
+img {
+    height: 75px;
+    width:100%;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    justify-content: flex-end;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+
