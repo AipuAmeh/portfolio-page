@@ -1,0 +1,148 @@
+*{
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header h1 {
+    font-size: 30px;
+    
+}
+
+ nav{
+    font-size: 1.5rem;
+    padding: 20px;
+    font-family: serif, sans-serif, 'Times New Roman';
+    background-color: bisque;
+    color: black;
+}
+
+img {
+    height: 250px;
+    width:100%;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    justify-content: flex-end;
+}
+
+header ul a {
+    text-decoration: none;
+
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 90px;
+}
+
+aside h1 {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 50px;
+    margin: 20px;
+}
+
+aside {
+    border-right: 5px solid black;
+    margin-right: 20px;
+    height: 125px;
+    text-align: center;
+}
+
+hr {
+    height: 5px;
+    border-width: 0;
+    background-color: black;
+    transform: rotate(90deg);
+    position: relative;
+
+}
+
+/* .projects {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+} */
+   
+    
+
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: solid orange 2px;
+    padding-right: 50px;
+    flex: 1 0 50%;
+}
+
+ .card { 
+    /* flex: 1 0 50%;  */
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px pink;
+    width: 50%;
+    max-width: 50%;
+    height: 100%;
+
+}
+
+.card-1 {
+    flex: 1 0 100%;
+    border: solid 2px pink;
+    height: 100%;
+    width: 100%;
+}
+
+#about-me {
+    display: flex;
+    padding-left: 15%;
+    margin-top: 2%;
+    width: 75%;
+    
+}
+
+#about-me p {
+    position: relative;
+    top: 10px;
+}
+
+
+#work {
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 15%;
+    /* width: 75%; */
+}
+
+#contact-me {
+    display: flex;
+    float: left;
+    padding-left: 15%;
+    width: 75%;
+    margin-top: 30%;
+
+}
+
+#contact-me ul li {
+    position: relative;
+    top: 65px;
+    display: inline-block;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
