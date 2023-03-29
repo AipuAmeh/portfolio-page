@@ -31,6 +31,11 @@ header ul {
     justify-content: flex-end;
 }
 
+header ul a {
+    text-decoration: none;
+
+}
+
 header ul li {
     display: inline-block;
     margin-left: 90px;
@@ -41,7 +46,22 @@ aside h1 {
     justify-content: space-evenly;
     font-size: 50px;
     margin: 20px;
-    width: 40%;
+}
+
+aside {
+    border-right: 5px solid black;
+    margin-right: 20px;
+    height: 125px;
+    text-align: center;
+}
+
+hr {
+    height: 5px;
+    border-width: 0;
+    background-color: black;
+    transform: rotate(90deg);
+    position: relative;
+
 }
 
 /* .projects {
