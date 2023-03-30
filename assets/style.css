@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+/* :root {
+    var(--nude):bisque;
+} */
+
 
 header h1 {
     font-size: 30px;
@@ -33,6 +37,10 @@ header ul {
 
 header ul a {
     text-decoration: none;
+    color: black;
+}
+header ul a:hover{
+    color: #99681A;
 
 }
 
@@ -46,6 +54,7 @@ aside h1 {
     justify-content: space-evenly;
     font-size: 50px;
     margin: 20px;
+    width: max-content;
 }
 
 aside {
@@ -53,6 +62,7 @@ aside {
     margin-right: 20px;
     height: 125px;
     text-align: center;
+    margin-top: 50px;
 }
 
 hr {
@@ -76,55 +86,87 @@ hr {
 .project-container {
     display: flex;
     flex-wrap: wrap;
+    row-gap: 5px;
     justify-content: space-evenly;
-    border: solid orange 2px;
+    /* border: solid orange 2px; */
     padding-right: 50px;
     flex: 1 0 50%;
+    margin-top: 50px;
 }
 
- .card { 
-    /* flex: 1 0 50%;  */
-    display: flex;
-    flex-wrap: wrap;
-    border: solid 2px pink;
-    width: 50%;
-    max-width: 50%;
-    height: 100%;
+/* .project-container,
+.card {
+    margin: 5px 0 5px 0;
+    gap: 5px;
 
+} */
+
+ .card { 
+    flex-wrap: wrap;
+    border: solid 4px #99681A;
+    width: 50%;
+    max-width: 48%;
+    height: 100%;
+    position: relative;
+    background-image: url(../images/Daily\ Motivation.jpeg);
+    margin: 5px;
+    max
+}
+
+.card p {
+    border: solid;
+    width: 125px;
+    height: 50px;
+    font-size: 25px;
+    background-color: bisque;
+    text-align: center;
+    padding: 8px;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.card-1 p {
+    border: solid;
+    width: 125px;
+    height: 50px;
+    font-size: 25px;
+    background-color: bisque;
+    text-align: center;
+    padding: 8px;
+    position: absolute;
+    bottom: 1rem;
 }
 
 .card-1 {
+    background-image: url(../images/Breathe_\ Danika\ Rose.jpeg);
     flex: 1 0 100%;
-    border: solid 2px pink;
+    border: solid 4px #99681A;
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 #about-me {
     display: flex;
-    padding-left: 15%;
+    padding-left: 9%;
     margin-top: 2%;
-    width: 75%;
     
 }
 
 #about-me p {
-    position: relative;
-    top: 10px;
+    margin-top: 50px;
 }
 
 
 #work {
     display:flex;
     flex-wrap: wrap;
-    padding-left: 15%;
-    /* width: 75%; */
+    padding-left: 10%;
 }
 
 #contact-me {
     display: flex;
-    float: left;
-    padding-left: 15%;
+    padding-left: 7%;
     width: 75%;
     margin-top: 30%;
 
@@ -138,6 +180,17 @@ hr {
     justify-content: space-evenly;
     margin-left: 20px;
 }
+
+#contact-me ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:1024px) {
+
+}
+    
+
 
 
 
