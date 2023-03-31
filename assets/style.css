@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-/* :root {
-    var(--nude):bisque;
-} */
-
-
 header h1 {
     font-size: 30px;
     
@@ -30,6 +25,7 @@ img {
 
 header ul {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     font-size: 20px;
     justify-content: flex-end;
@@ -39,9 +35,9 @@ header ul a {
     text-decoration: none;
     color: black;
 }
+
 header ul a:hover{
     color: #99681A;
-
 }
 
 header ul li {
@@ -49,38 +45,25 @@ header ul li {
     margin-left: 90px;
 }
 
-aside h1 {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 50px;
-    margin: 20px;
-    width: max-content;
-}
-
 aside {
-    border-right: 5px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    /* border-right: 5px solid black; */
     margin-right: 20px;
     height: 125px;
     text-align: center;
     margin-top: 50px;
 }
 
-hr {
-    height: 5px;
-    border-width: 0;
-    background-color: black;
-    transform: rotate(90deg);
-    position: relative;
-
-}
-
-/* .projects {
+aside h1 {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-} */
-   
-    
+    font-size: 45px;
+    margin: 20px;
+    width: max-content;
+    align-items: center;
+}
+
 
 
 .project-container {
@@ -88,33 +71,22 @@ hr {
     flex-wrap: wrap;
     row-gap: 5px;
     justify-content: space-evenly;
-    /* border: solid orange 2px; */
     padding-right: 50px;
     flex: 1 0 50%;
     margin-top: 50px;
 }
 
-/* .project-container,
-.card {
-    margin: 5px 0 5px 0;
-    gap: 5px;
-
-} */
-
  .card { 
-    flex-wrap: wrap;
     border: solid 4px #99681A;
     width: 50%;
     max-width: 48%;
     height: 100%;
     position: relative;
-    background-image: url(../images/Daily\ Motivation.jpeg);
     margin: 5px;
-    max
 }
 
 .card p {
-    border: solid;
+    border: solid #99681A 2px;
     width: 125px;
     height: 50px;
     font-size: 25px;
@@ -126,7 +98,7 @@ hr {
 }
 
 .card-1 p {
-    border: solid;
+    border: solid #99681A 2px;
     width: 125px;
     height: 50px;
     font-size: 25px;
@@ -138,11 +110,13 @@ hr {
 }
 
 .card-1 {
+    flex-wrap: wrap;
     background-image: url(../images/Breathe_\ Danika\ Rose.jpeg);
     flex: 1 0 100%;
     border: solid 4px #99681A;
     height: 100%;
     width: 100%;
+    max-width: 98%;
     position: relative;
 }
 
@@ -150,35 +124,38 @@ hr {
     display: flex;
     padding-left: 9%;
     margin-top: 2%;
-    
+    align-items: center;
 }
 
 #about-me p {
     margin-top: 50px;
+    font-size: 20px;
 }
 
 
 #work {
     display:flex;
     flex-wrap: wrap;
-    padding-left: 10%;
+    padding-left: 9.5%;
 }
 
 #contact-me {
     display: flex;
     padding-left: 7%;
     width: 75%;
-    margin-top: 30%;
-
+    margin-top: 20%;
+    align-items: center;
 }
 
 #contact-me ul li {
     position: relative;
-    top: 65px;
+    top: 100%;
     display: inline-block;
     list-style-type: none;
+    text-decoration: underline;
     justify-content: space-evenly;
-    margin-left: 20px;
+    margin: 50px 0 0 30px;
+    font-size: 20px;
 }
 
 #contact-me ul li a {
@@ -186,9 +163,79 @@ hr {
     color: black;
 }
 
-@media screen and (max-width:1024px) {
+#card-2 {
+    background-image: url(..//images/good\ things\ take\ time\ 🤍\ neutral\ background\ \(follow\ shannon\ shaw\ for\ more!\).jpeg); 
+}
+
+#card-3 {
+    background-image: url(..//images/Free\ wallpaper\ downloads\ for\ your\ iPhone\ lock\ screen\ or\ home\ screen_.jpeg);
+}
+
+#card-4 {
+    background-image: url(..//images/Earth\,\ Ilan\ Shoshan\ _\ Sage\ green\ wallpaper\,\ Dark\ green\ aesthetic\,\ Aesthetic\ backgrounds.jpeg);
+}
+
+#card-5 {
+    background-image: url(..//images/_.jpeg);
+}
+
+@media screen and (max-width: 992px) {
+    #about-me, #contact-me, #work{
+        width: 100%;
+        flex-direction: column;
+    }
+    aside {
+        border-bottom: 5px solid black;
+    }
+    #card-0, #card-2, #card-3, #card-4, #card-5 {
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #about-me, #contact-me, #work{
+        width: 100%;
+        flex-direction: column;
+    }
+    aside {
+        border-bottom: 5px solid black;
+    }
+    #card-0, #card-2, #card-3, #card-4, #card-5  {
+    flex-direction: column;
+    align-items: center;
+    flex: 100%;
+   }
+   /* #contact ul a {
+    display: flex;
+    flex-direction: column;
+    } */
+   
+}
+
+@media screen and (max-width: 576px) {
+#about-me, #contact-me, #work {
+    width: 100%;
+    flex-direction: column;
+}
+aside {
+    border-bottom: 5px solid black;
+}
+nav ul li a{
+display: inline-flex;
+flex-direction: column;
+}
+#card-0, #card-2, #card-3, #card-4, #card-5  {
+    flex-direction: column;
+    align-items: center;
+    flex: 100%;
+   }
+/* #contact ul a {
+    flex-direction: column;
+} */
 
 }
+
+
     
 
 
