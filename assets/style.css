@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-/* :root {
-    var(--nude):bisque;
-} */
-
-
 header h1 {
     font-size: 30px;
     
@@ -74,32 +69,15 @@ hr {
 
 }
 
-/* .projects {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
-} */
-   
-    
-
-
 .project-container {
     display: flex;
     flex-wrap: wrap;
     row-gap: 5px;
     justify-content: space-evenly;
-    /* border: solid orange 2px; */
     padding-right: 50px;
     flex: 1 0 50%;
     margin-top: 50px;
 }
-
-/* .project-container,
-.card {
-    margin: 5px 0 5px 0;
-    gap: 5px;
-
-} */
 
  .card { 
     flex-wrap: wrap;
@@ -108,13 +86,11 @@ hr {
     max-width: 48%;
     height: 100%;
     position: relative;
-    background-image: url(../images/Daily\ Motivation.jpeg);
     margin: 5px;
-    max
 }
 
 .card p {
-    border: solid;
+    border: solid #99681A 2px;
     width: 125px;
     height: 50px;
     font-size: 25px;
@@ -126,7 +102,7 @@ hr {
 }
 
 .card-1 p {
-    border: solid;
+    border: solid #99681A 2px;
     width: 125px;
     height: 50px;
     font-size: 25px;
@@ -143,6 +119,7 @@ hr {
     border: solid 4px #99681A;
     height: 100%;
     width: 100%;
+    max-width: 98%;
     position: relative;
 }
 
@@ -161,7 +138,7 @@ hr {
 #work {
     display:flex;
     flex-wrap: wrap;
-    padding-left: 10%;
+    padding-left: 9.5%;
 }
 
 #contact-me {
@@ -172,9 +149,16 @@ hr {
 
 }
 
+#contact-me ul {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
 #contact-me ul li {
     position: relative;
-    top: 65px;
+    top: 95px;
     display: inline-block;
     list-style-type: none;
     justify-content: space-evenly;
@@ -186,9 +170,26 @@ hr {
     color: black;
 }
 
-@media screen and (max-width:1024px) {
-
+#card-2 {
+    background-image: url(..//images/good\ things\ take\ time\ 🤍\ neutral\ background\ \(follow\ shannon\ shaw\ for\ more!\).jpeg); 
 }
+
+#card-3 {
+    background-image: url(..//images/Free\ wallpaper\ downloads\ for\ your\ iPhone\ lock\ screen\ or\ home\ screen_.jpeg);
+}
+
+#card-4 {
+    background-image: url(..//images/Earth\,\ Ilan\ Shoshan\ _\ Sage\ green\ wallpaper\,\ Dark\ green\ aesthetic\,\ Aesthetic\ backgrounds.jpeg);
+}
+
+#card-5 {
+    background-image: url(..//images/_.jpeg);
+}
+@media screen and (max-width: 1024px) {
+    
+}
+
+
     
 
 
