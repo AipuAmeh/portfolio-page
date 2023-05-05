@@ -1,4 +1,4 @@
-# week-two
+# Designs By Aipu
 # Weekly Challenge 2
 
 ## Description
