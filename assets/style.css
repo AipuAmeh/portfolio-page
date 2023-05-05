@@ -86,11 +86,12 @@ aside h1 {
 }
 
 .card p {
-    border: solid #99681A 2px;
+    border: solid #99681A 3px;
     width: 125px;
     height: 50px;
-    font-size: 25px;
-    background-color: bisque;
+    font-size: 20px;
+    background-color: white;
+    font-weight: bold;
     text-align: center;
     padding: 8px;
     position: absolute;
@@ -98,22 +99,30 @@ aside h1 {
 }
 
 .card-1 p {
-    border: solid #99681A 2px;
+    border: solid #99681A 3px;
     width: 125px;
     height: 50px;
-    font-size: 25px;
-    background-color: bisque;
+    font-size: 20px;
+    background-color:white;
     text-align: center;
     padding: 8px;
     position: absolute;
     bottom: 1rem;
 }
 
+.card-1 p:hover {
+    cursor: pointer;
+    color: #739e82;
+}
+
 .card-1 {
     flex-wrap: wrap;
-    background-image: url(../images/Breathe_\ Danika\ Rose.jpeg);
+    background-image: url(../images/bookipedia-home_720.png);
     flex: 1 0 100%;
     border: solid 4px #99681A;
+    color: black;
+    font-weight: bold;
+    padding: 2px;
     height: 100%;
     width: 100%;
     max-width: 98%;
