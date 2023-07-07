@@ -173,7 +173,13 @@ aside h1 {
 }
 
 #card-2 {
-    background-image: url(..//images/good\ things\ take\ time\ 🤍\ neutral\ background\ \(follow\ shannon\ shaw\ for\ more!\).jpeg); 
+    background-image: url(../images/hypehub2.png); 
+}
+
+#card-2 p:hover{
+    cursor: pointer;
+    color: gray;
+
 }
 
 #card-3 {
