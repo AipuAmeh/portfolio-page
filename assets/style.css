@@ -5,50 +5,37 @@
     box-sizing: border-box;
 }
 
+header {
+    background-color: bisque;
+
+}
 header h1 {
-    font-size: 30px;
-    
+    font-size: 200%;
+    padding: 20px;
 }
 
  nav{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
     font-size: 1.5rem;
     padding: 20px;
     font-family: serif, sans-serif, 'Times New Roman';
-    background-color: bisque;
     color: black;
 }
 
-img {
-    height: 250px;
-    width:100%;
-}
-
-header ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    font-size: 20px;
-    justify-content: flex-end;
-}
-
-header ul a {
+nav a {
     text-decoration: none;
     color: black;
 }
 
-header ul a:hover{
+nav a:hover{
     color: #99681A;
-}
-
-header ul li {
-    display: inline-block;
-    margin-left: 90px;
 }
 
 aside {
     display: flex;
     flex-wrap: wrap;
-    /* border-right: 5px solid black; */
     margin-right: 20px;
     height: 125px;
     text-align: center;
@@ -56,7 +43,6 @@ aside {
 }
 
 aside h1 {
-    display: flex;
     justify-content: space-evenly;
     font-size: 45px;
     margin: 20px;
@@ -64,11 +50,16 @@ aside h1 {
     align-items: center;
 }
 
-
+.header-image {
+    height: 200px;
+    width:100%;
+}
 
 .project-container {
     display: flex;
     flex-wrap: wrap;
+    height: 12vh;
+    width: 100%;
     row-gap: 5px;
     justify-content: space-evenly;
     padding-right: 50px;
@@ -78,11 +69,11 @@ aside h1 {
 
  .card { 
     border: solid 4px #99681A;
-    width: 50%;
+    width: 100%;
     max-width: 48%;
     height: 100%;
     position: relative;
-    margin: 5px;
+    margin: 5px;   
 }
 
 .card p {
@@ -108,6 +99,7 @@ aside h1 {
     padding: 8px;
     position: absolute;
     bottom: 1rem;
+ 
 }
 
 .card-1 p:hover {
@@ -118,7 +110,7 @@ aside h1 {
 .card-1 {
     flex-wrap: wrap;
     background-image: url(../images/bookipedia-home_720.png);
-    flex: 1 0 100%;
+    flex: 1 1 100%;
     border: solid 4px #99681A;
     color: black;
     font-weight: bold;
@@ -146,13 +138,14 @@ aside h1 {
     display:flex;
     flex-wrap: wrap;
     padding-left: 9.5%;
+    align-items: center;
+    padding-bottom: 12%;
 }
 
 #contact-me {
     display: flex;
-    padding-left: 7%;
-    width: 75%;
-    margin-top: 20%;
+    padding-left: 9%;
+    width: 100%;
     align-items: center;
 }
 
@@ -202,8 +195,12 @@ aside h1 {
     aside {
         border-bottom: 5px solid black;
     }
+    .contact-aside {
+        margin-top: 0;
+    }
     #card-0, #card-2, #card-3, #card-4, #card-5 {
         height: 10vh;
+        max-width: 100%;
     }
 }
 
@@ -211,15 +208,28 @@ aside h1 {
     #about-me, #contact-me, #work{
         width: 100%;
         flex-direction: column;
+
+    }
+    nav {
+        align-items: center;
+        flex-direction: column;
     }
     aside {
         border-bottom: 5px solid black;
+        align-items: center;
     }
-    #card-0, #card-2, #card-3, #card-4, #card-5  {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1px;
+    }
+   .card, .card-1 {
     flex-direction: column;
     align-items: center;
     flex: 100%;
    }
+ 
    
 }
 
@@ -231,11 +241,17 @@ aside h1 {
 aside {
     border-bottom: 5px solid black;
 }
-nav ul li a{
-display: inline-flex;
+nav {
+align-items: center;
 flex-direction: column;
 }
-#card-0, #card-2, #card-3, #card-4, #card-5  {
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1px;
+}
+.card, .card-1 {
     flex-direction: column;
     align-items: center;
     flex: 100%;
