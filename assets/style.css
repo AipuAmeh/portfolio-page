@@ -58,7 +58,7 @@ aside h1 {
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    height: 10vh;
+    height: 12vh;
     width: 100%;
     row-gap: 5px;
     justify-content: space-evenly;
@@ -69,12 +69,11 @@ aside h1 {
 
  .card { 
     border: solid 4px #99681A;
-    width: 50%;
+    width: 100%;
     max-width: 48%;
     height: 100%;
     position: relative;
-    margin: 5px;
-    
+    margin: 5px;   
 }
 
 .card p {
@@ -140,13 +139,13 @@ aside h1 {
     flex-wrap: wrap;
     padding-left: 9.5%;
     align-items: center;
+    padding-bottom: 12%;
 }
 
 #contact-me {
     display: flex;
-    padding-left: 7%;
+    padding-left: 9%;
     width: 100%;
-    margin-top: 10%;
     align-items: center;
 }
 
@@ -196,8 +195,12 @@ aside h1 {
     aside {
         border-bottom: 5px solid black;
     }
+    .contact-aside {
+        margin-top: 0;
+    }
     #card-0, #card-2, #card-3, #card-4, #card-5 {
         height: 10vh;
+        max-width: 100%;
     }
 }
 
@@ -215,12 +218,17 @@ aside h1 {
         border-bottom: 5px solid black;
         align-items: center;
     }
-    #card-0, #card-2, #card-3, #card-4, #card-5  {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1px;
+    }
+   .card, .card-1 {
     flex-direction: column;
     align-items: center;
     flex: 100%;
    }
-
  
    
 }
@@ -237,8 +245,13 @@ nav {
 align-items: center;
 flex-direction: column;
 }
-
-#card-0, #card-2, #card-3, #card-4, #card-5  {
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1px;
+}
+.card, .card-1 {
     flex-direction: column;
     align-items: center;
     flex: 100%;
