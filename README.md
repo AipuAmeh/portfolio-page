@@ -4,7 +4,7 @@
 
 This challenge tested our knowledge on HTML and CSS properties by allowing us to build our portfolio website from scratch.
 
-<img width="1440" alt="Screenshot 2023-03-31 at 1 51 39 AM" src="https://user-images.githubusercontent.com/110988589/229035599-ca9ca108-e471-4f0d-a798-c610b51f0fa7.png">
+<img width="1440" alt="Screenshot 2023-09-12 at 9 30 47 PM" src="https://github.com/AipuAmeh/portfolio-page/assets/110988589/42c350cf-5649-445d-a4c9-9b20e3a967ef">
 
 ## Installation
 
