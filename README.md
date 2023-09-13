@@ -8,7 +8,7 @@ This challenge tested our knowledge on HTML and CSS properties by allowing us to
 
 ## Installation
 
-[Link to Deployed Site](https://aipuameh.github.io/week-two/)
+[Link to Deployed Site](https://aipuameh.github.io/portfolio-page/)
 
 ## Usage
 
